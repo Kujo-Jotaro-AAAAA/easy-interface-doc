@@ -4,7 +4,7 @@
 	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.",
 	"version": "0.0.1",
 	"publisher": "zzc",
-  "icon": "src/images/logo.ico",
+  "icon": "images/logo.ico",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -17,7 +17,7 @@
 	"main": "./out/extension.js",
 	"repository": {
     "type": "git",
-    "url": "https://github.com/xabikos/vscode-javascript"
+    "url": "https://git.dev.tencent.com/zzc5464/easy-interface-doc.git"
   },
 	"contributes": {
 		"commands": [
