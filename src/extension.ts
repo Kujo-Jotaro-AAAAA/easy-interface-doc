@@ -2,7 +2,7 @@
  * @Author: LaoZhang
  * @Date: 2019-12-27 12:01:13
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-14 18:47:42
+ * @LastEditTime : 2020-01-15 17:39:19
  * @Description: 作用
  * @FilePath: /cli-demo/src/extension.ts
  */
@@ -31,7 +31,8 @@ export function activate(context: any) {
 		let editSelection = editor.selection; // 选择的内容
 		editor.edit((editBuilder: any) => { // 当编辑时调用
 			let text = editor.document.getText(editSelection);
-			let splitTpl = logic.splitComment(text);
+			let splitTpl = logic.parseInterface(text);
+			// let splitTpl = logic.splitComment(text);
 			replaceEditActiveStr(editBuilder, splitTpl)
 		});
 		
@@ -40,7 +41,7 @@ export function activate(context: any) {
 	context.subscriptions.push(disposable);
 }
 /**
- * 
+ * 替换选中区域的文字
  * @param editBuilder 编辑对象
  * @param tpl 更改的字符模板
  */

@@ -22,7 +22,8 @@ function activate(context) {
         let editSelection = editor.selection; // 选择的内容
         editor.edit((editBuilder) => {
             let text = editor.document.getText(editSelection);
-            let splitTpl = logic.splitComment(text);
+            let splitTpl = logic.parseInterface(text);
+            // let splitTpl = logic.splitComment(text);
             replaceEditActiveStr(editBuilder, splitTpl);
         });
     });
@@ -31,7 +32,7 @@ function activate(context) {
 }
 exports.activate = activate;
 /**
- *
+ * 替换选中区域的文字
  * @param editBuilder 编辑对象
  * @param tpl 更改的字符模板
  */

@@ -2,7 +2,7 @@
  * @Author: LaoZhang
  * @Date: 2020-01-08 15:05:54
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-15 09:21:50
+ * @LastEditTime : 2020-01-15 15:12:33
  * @Description: 作用
  * @FilePath: /cli-demo/src/utils/logic.ts
  */
@@ -64,6 +64,9 @@ const determineKey = (key: string) => {
 const determineValueType = (type: any) => {
   // const { isObject, isArray, isString, isBoolean, isNumber } = tools;
   // let targetType: string;
+  if (typeof type === 'object') {
+
+  }
   return typeof type;
 }
 /**
@@ -83,7 +86,7 @@ const determineStringValueType = (value: string) => {
  * @param text 
  */
 const splitComment = (text: string) => {
-  const comments: any[] = [];
+  const comments:  string[] = [];
   let replaceText = text.replace(/\/\/.*\n/g, (comment: string) => {
     comments.push(comment);
     return '';
@@ -93,8 +96,8 @@ const splitComment = (text: string) => {
   Object.keys(parseReplaceText).map((key, idx: number) => {
     let currCommentVal = comments[idx];
     let value = parseReplaceText[key];
-    let typeValue = `${determineValueType(value)}; ${currCommentVal}`;
-    result += `${key}: ${typeValue}`
+    let typeValue = `${determineValueType(value)}; ${currCommentVal}`; // 类型 + 注释
+    result += `${key}: ${typeValue}`; // 简单类型
   });
   return `${result}}` 
 }

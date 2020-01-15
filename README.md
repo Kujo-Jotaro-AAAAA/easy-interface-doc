@@ -2,7 +2,7 @@
  * @Author: LaoZhang
  * @Date: 2019-12-27 12:01:13
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-15 10:15:25
+ * @LastEditTime : 2020-01-15 15:07:36
  * @Description: 作用
  * @FilePath: /easy-interface-doc/README.md
  -->
@@ -32,3 +32,5 @@ interface Test {
 ## 版本
 
 `0.0.1`: 仅粗暴的支持整个选中 yapi 文档替换的情况。不支持递归。
+`0.0.2`: 递归设置类型
+`0.0.3`: 支持设置片段
