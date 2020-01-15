@@ -12,7 +12,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.changeTs",
+		"onCommand:extension.changeTs"
 	],
 	"main": "./out/extension.js",
 	"repository": {
