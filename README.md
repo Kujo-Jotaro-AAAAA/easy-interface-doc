@@ -2,7 +2,7 @@
  * @Author: LaoZhang
  * @Date: 2019-12-27 12:01:13
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-15 09:24:31
+ * @LastEditTime : 2020-01-15 10:15:25
  * @Description: 作用
  * @FilePath: /easy-interface-doc/README.md
  -->
@@ -11,10 +11,11 @@
 快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.
 
 ```json
-
-"name": "小白",
-"age": 12,
-"isMarry": false,
+{
+  "name": "小白",
+  "age": 12,
+  "isMarry": false
+}
 ```
 
 `=>`

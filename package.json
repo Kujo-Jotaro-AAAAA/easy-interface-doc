@@ -1,6 +1,6 @@
 {
 	"name": "easy-interface-doc",
-	"displayName": "生成 interface",
+	"displayName": "yapi 转换interface doc工具",
 	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.",
 	"version": "0.0.1",
 	"publisher": "zzc",
@@ -12,7 +12,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.changeTs"
+		"onCommand:extension.changeTs",
 	],
 	"main": "./out/extension.js",
 	"repository": {
