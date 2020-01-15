@@ -2,13 +2,14 @@
  * @Author: LaoZhang
  * @Date: 2019-12-27 12:01:13
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-15 15:07:36
+ * @LastEditTime : 2020-01-15 17:44:47
  * @Description: 作用
  * @FilePath: /easy-interface-doc/README.md
  -->
 # Easy-Interface-Doc
 
 快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.
+**最后一行自己加个,**
 
 ```json
 {
@@ -32,5 +33,4 @@ interface Test {
 ## 版本
 
 `0.0.1`: 仅粗暴的支持整个选中 yapi 文档替换的情况。不支持递归。
-`0.0.2`: 递归设置类型
-`0.0.3`: 支持设置片段
+`0.0.2`: 改回原有实现逻辑, 不支持最后一行转换

@@ -1,8 +1,8 @@
 {
 	"name": "easy-interface-doc",
 	"displayName": "yapi 转换interface doc工具",
-	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.",
-	"version": "0.0.1",
+	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.but, 最后一行要自己加个,",
+	"version": "0.0.2",
 	"publisher": "zzc",
   "icon": "images/logo.ico",
 	"engines": {
