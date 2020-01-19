@@ -3,7 +3,7 @@
  * @Author: LaoZhang
  * @Date: 2020-01-08 15:05:54
  * @LastEditors  : LaoZhange
- * @LastEditTime : 2020-01-19 16:36:04
+ * @LastEditTime : 2020-01-19 16:36:49
  * @Description: 作用
  * @FilePath: /cli-demo/src/utils/logic.ts
  */
@@ -41,10 +41,7 @@ let regLine = /".*\n?/g;
  */
 const parseInterface = (text) => {
     let replaceText = text.replace(regLine, (str) => {
-        // if ( !(regLine.test(str)) ) return str;
-        console.log('line str ==>', str);
         let rpLine = str.replace(/"\w*" *: *(".*"|\d*),?/gi, (line) => {
-            console.log('line ==>', line, typeof line);
             const [key, value] = line.split(':');
             let keyCode = determineKey(key);
             let valueCode = determineStringValueType(value);
@@ -52,12 +49,6 @@ const parseInterface = (text) => {
         });
         return rpLine;
     });
-    // let replaceText = text.replace(/".*,/gi, (str: string) => {
-    //   const [ key , value ] = str.split(':');
-    //   let keyCode = determineKey(key);
-    //   let valueCode = determineStringValueType(value);
-    //   return `${keyCode}: ${valueCode}`
-    // });
     return replaceText;
 };
 /**
@@ -84,7 +75,6 @@ const determineValueType = (type) => {
  * @returns 返回类型
  */
 const determineStringValueType = (str) => {
-    console.log('要解析的 str', str, typeof str);
     // let str = String(value).trim().substring(0, value.length - 1)
     if (/"|'/g.test(str))
         return 'string;'; // 有引号就代表是字符串类型
