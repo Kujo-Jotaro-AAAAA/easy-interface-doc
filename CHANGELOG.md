@@ -1,9 +1,7 @@
-# Change Log
+# 版本更新
 
-All notable changes to the "cli-demo" extension will be documented in this file.
+`0.0.1`: 仅粗暴的支持整个选中 yapi 文档替换的情况。不支持递归。
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+`0.0.2`: 改回原有实现逻辑, 不支持最后一行转换
 
-## [Unreleased]
-
-- Initial release
+`0.0.3`: 支持任意选中替换
