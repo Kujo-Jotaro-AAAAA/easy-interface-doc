@@ -2,9 +2,9 @@
 	"name": "easy-interface-doc",
 	"displayName": "easy-interface-doc",
 	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.but, 最后一行要自己加个,",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "The-World",
-  "icon": "images/logo.ico",
+	"icon": "images/logo.ico",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
@@ -16,9 +16,9 @@
 	],
 	"main": "./out/extension.js",
 	"repository": {
-    "type": "git",
-    "url": "https://git.dev.tencent.com/zzc5464/easy-interface-doc.git"
-  },
+		"type": "git",
+		"url": "https://git.dev.tencent.com/zzc5464/easy-interface-doc.git"
+	},
 	"contributes": {
 		"commands": [
 			{
