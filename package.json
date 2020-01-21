@@ -2,7 +2,7 @@
 	"name": "easy-interface-doc",
 	"displayName": "easy-interface-doc",
 	"description": "快速生成 interface 文档工具, 针对后端 mock 出来的json 自动生成对应的类型.but, 最后一行要自己加个,",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "The-World",
 	"icon": "images/logo.ico",
 	"engines": {
